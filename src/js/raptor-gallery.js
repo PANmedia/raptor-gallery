@@ -55,6 +55,10 @@ RaptorGallery.initialise = function(gallery, image) {
     this.gallery = gallery;
     this.image = image;
     RaptorGallery.imageWapper.innerHTML = image.outerHTML;
+    var images = RaptorGallery.imageWapper.querySelectorAll('[data-src]');
+    for (var i = 0; i < images.length; i++) {
+        images[i].src = images[i].dataset.src;
+    }
     this.modal.style.display = 'block';
     this.resize();
 };
