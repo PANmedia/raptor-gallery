@@ -11,6 +11,7 @@
     top: 0;
     z-index: 4000;
     background-color: rgba(0, 0, 0, 0.5);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
 }
 
 #raptor-gallery-modal table {

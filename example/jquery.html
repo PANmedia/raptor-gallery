@@ -1,0 +1,18 @@
+<!doctype html>
+<link href="../src/css/raptor-gallery.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="../src/js/jquery-raptor-gallery.js"></script>
+<style type="text/css">
+    #gallery .thumb {
+        max-width: 100px;
+        max-height: 100px;
+    }
+</style>
+<div id="gallery">
+    <img class="thumb" src="images/jquery-raptor-og.png" data-src="images/raptor.png" />
+    <img class="thumb" src="images/mammoth-og.jpg" data-src="images/mammoth.png" />
+    <img class="thumb" src="images/saber-tooth.png" />
+</div>
+<script type="text/javascript">
+    var gallery = new RaptorGallery('#gallery', 'img');
+</script>
